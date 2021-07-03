@@ -1,0 +1,29 @@
+.slide-tm{
+    height: 760px;
+    .item{
+        height: 380px;
+    }
+}
+.tm_content{
+    top: 63%;
+}
+.tm{
+    height: 1200px;
+}
+.tm_service{
+    margin: 0 0 134px 0;
+}
+@media only screen and (max-width:991px) and (min-width:500px){
+    .slide-tm{
+        height: 600px;
+        .item{
+            height: 300px;
+        }
+    }
+    .tm_content {
+        top: 48%;
+    }
+}
+@media screen and (max-width:1024px){
+    
+}

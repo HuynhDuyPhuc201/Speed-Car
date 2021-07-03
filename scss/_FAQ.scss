@@ -1,0 +1,193 @@
+.title-faq{
+    padding-top: 132px;
+    .text{
+        h3{
+            font-size: var(--font-size);
+            color: #333333;
+            font-family: 'MB';
+        }
+        p{
+            font-size: var(--font-size-p);
+            font-family: 'OR';
+            color: #999999;
+            padding: 30px 0 60px;
+        }
+    }
+}
+
+.FAQ{
+    margin-bottom: 20px;
+    &_accordion{
+        border: 1px solid #e2e2e2;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        cursor: pointer;
+        transition: all .3s;
+        .left{
+            display: flex;
+            align-items: center;
+            .arrow{
+                padding: 0 10px 0 30px;
+            }
+            .text{
+                position: relative;
+                p{
+                    font-size: var(--font-size-p3);
+                    font-family: 'OR';
+                    color: #232628;
+                    transition: all .3s;
+                }
+            }
+        }
+        .minus{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 30px;
+            background-color: #0988ff;
+            position: relative;
+            display: block;
+            cursor: pointer;
+            z-index: 2;
+            span{
+                content: ''; // ngang
+                width: 15px;
+                height: 3px;
+                position: absolute;
+                display: block;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #ffffff; 
+                transition: all .3s;
+                z-index: 11;
+            }
+            &::after{
+                content: ''; // cộng
+                width: 15px;
+                height: 3px;
+                position: absolute;
+                display: block;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(90deg);
+                background-color: #ffffff;
+                transition: all .3s;
+            }
+        }
+    }
+    .active{
+        background-color: #0988ff;
+        transition: all .3s;
+        .left{
+            .text{
+                p{
+                    color: #ffffff;
+                    transition: all .3s;
+                }
+            }
+        }
+        .minus{
+             background-color: #fff;
+             transition: all .3s;
+             span{
+                 background-color: #0988ff;
+                 transition: all .3s;
+             }
+        }
+     }
+    &_content{
+        background: #ffffff;
+        padding: 30px;
+        display: none;
+        border: 1px solid #e2e2e2;
+        .text{
+            p{
+                font-size: var(--font-size-p);
+                font-family: 'OR';
+                color: #999999;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.arcordion2{
+    background: #eef7ff;
+    margin-top: 110px;
+    position: relative;
+    height: 870px;
+    &_d{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .image{
+        img{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+.service-FAQ{
+    margin: 0 0 134px 0;
+}
+
+
+// mobile
+@media only screen and(max-width:767px) and (min-width:320px){
+    .FAQ_accordion{
+        .left{
+            .arrow{
+                padding: 0px 5px 0 10px;
+            }
+            .text{
+                p{
+                    font-size:15px;
+                }
+            }
+        }
+    }
+    .FAQ{
+        &_accordion{
+            height: 80px;
+            display: flex;
+            .left{
+                .arrow{
+                    padding: 0px 5px 0 10px;
+                }
+                .text{
+                    p{
+                        font-size: 13px;
+                    }
+                }
+            }
+            .minus{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 15px;
+                span{
+                    width: 8px;
+                    height: 2px;
+                }
+                &::after{
+                    width: 10px;
+                    height: 2px;
+                }
+            }
+        }
+    }
+    .title-faq {
+        padding-top: 100px;
+    }
+}

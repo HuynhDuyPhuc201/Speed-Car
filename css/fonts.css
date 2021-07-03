@@ -1,0 +1,70 @@
+@font-face{
+    font-family:'MB';
+    src: url('../fonts/Montserrat-Bold.woff') format('woff');
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
+    display: fallback;
+}
+
+@font-face{
+    font-family: 'ME';
+    src: url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+    src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2');
+    display: fallback;
+}
+@font-face{
+    font-family: 'MS';
+    src: url('../fonts/Montserrat-SemiBold.woff') format('woff');
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2');
+    display: fallback;
+}
+@font-face{
+    font-family: 'MM';
+    src: url('../fonts/Montserrat-Medium.woff') format('woff');
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff');
+    display: fallback;
+}
+@font-face{
+    font-family: 'MR';
+    src: url('../fonts/Montserrat-Regular.woff') format('woff');
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff');
+    display: fallback;
+}
+@font-face{
+    font-family: 'MBI';
+    src: url('../fonts/Montserrat-BoldItalic.woff') format('woff');
+    src: url('../fonts/Montserrat-BoldItalic.woff2') format('woff');
+    display: fallback;
+}
+@font-face{
+    font-family: 'OR';  
+    src: url('../fonts/OpenSans-Regular.woff') format('woff');
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff');
+    display: fallback;
+}
+@font-face{
+    font-family: 'OB';
+    src: url('../fonts/OpenSans-Bold.woff') format('woff');
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff');
+    display: fallback;
+}
+@font-face{
+    font-family: 'OBI';
+    src: url('../fonts/OpenSans-BoldItalic.woff') format('woff');
+    src: url('../fonts/OpenSans-BoldItalic.woff2') format('woff');
+    display: fallback;
+}
+@font-face{
+    font-family: 'OSBI';
+    src: url('../fonts/OpenSans-SemiBoldItalic.woff') format('woff');
+    src: url('../fonts/OpenSans-SemiBoldItalic.woff') format('woff');
+    display: fallback;
+}
+@font-face{
+    font-family: 'OSB';
+    src: url('../fonts/OpenSans-SemiBold.woff') format('woff');
+    src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2');
+    display: fallback;
+}
+
+
+

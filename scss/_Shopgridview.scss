@@ -1,0 +1,251 @@
+
+.row-list{
+    padding: 100px 0 30px 0;
+}
+.wrapper-results{
+    display: inline-flex;
+    align-items: center;
+}
+.results{
+    p{
+        font-size: 18px;
+        font-family: 'OB';
+        color: #000;
+    }
+}
+.wrapper-list{
+    text-align: right;
+}
+.list1{
+    cursor: pointer;
+    border-radius: 5px;
+    &-item{
+        display: flex;
+        padding: 25px;
+        align-items: center;
+        border: 1px solid #ececec;
+        background: #f8f2f2;
+        justify-content: space-between;
+        
+        border-radius: 5px;
+            p{
+                font-size: 15px;
+                font-family: 'OB';
+                color: #000;
+            }
+            .icon{
+                transition: all .3s;
+            }
+            .active{
+                transform: rotateX(180deg);
+                transition: all .3s;
+            }
+        }
+}
+.list2{
+    text-align: left;
+    position: absolute;
+    z-index: 2;
+    display: none;
+    &_ul{    
+        li{
+            list-style: none;
+            border-radius: 5px;
+            padding: 25px 165px 25px 25px;
+            border: 1px solid #ececec;
+            font-size: 15px;
+            font-family: 'OB';
+            color: #000;
+            background: #f8f2f2;
+            transition: all .3s;
+            &:hover{
+                background-color: #f0d7d7;
+                transition: all .3s;
+            }
+        }
+    }
+
+}
+
+.sgv{
+    padding: 132px 0;
+    &_content{
+        background-color: #ffffff;
+        box-shadow: -2px 7px 5px 4px rgba(0,0,0,0.13);
+        -webkit-box-shadow: -2px 7px 5px 4px rgba(0,0,0,0.13);
+        -moz-box-shadow: -2px 7px 5px 4px rgba(0,0,0,0.13);
+        &-img{
+            overflow: hidden;
+            position: relative;
+            .image{
+                cursor: pointer;
+                overflow: hidden;
+                max-height: 280px;
+                img{
+                    width: 100%;
+                    max-width: 100%;
+                    cursor: pointer;
+                    transition: all .3s;
+                }
+                &:hover{
+                   img{
+                        transform: scale(1.1);
+                        transition: all .3s;
+                    }
+                }
+            }
+            .sale{
+                background-color: #92dc27;
+                border-radius: 50%;
+                width: 65px;
+                display: inline-block;
+                height: 65px;
+                position: absolute;
+                opacity: 0;
+                transition: all 0.6s;
+                top: 5%;
+                left: 8%;
+                span{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-family: 'MS';
+                    font-size: 15px;
+                }
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                opacity: 0;
+                top: 0;
+                right: 0;
+                height: 100%;
+                background: rgba(0,0,0,0.7);
+                transition: all 0.6s;
+            }
+            p{
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                color: #ffffff;
+                font-family: "MB";
+                font-size: var(--font-size-p);
+                -webkit-transition: all 0.6s;
+                transition: all 0.6s;
+            }
+            &:hover{
+                &:after{
+                    opacity: 0.8;
+                    transition: all 0.6s;
+                }
+                p{
+                    opacity: 1;
+                    z-index: 11;
+                    transition: all 0.6s;
+                }
+                .sale{
+                    opacity: 1;
+                    transition: all 0.6s;
+                    z-index: 5;
+                }
+                img{
+                    transform: scale(1.05);
+                    transition: all 0.6s;
+                }
+            }
+        }
+        &-text{
+            max-width: 290px;
+            margin: auto;
+            padding: 30px 0;
+            .text{
+                #p1{
+                    font-size: var(--font-size-number);
+                    font-family: 'OR';
+                    color:#333333;
+                }
+                #p2{
+                    font-size: var(--font-size-text);
+                    font-family: 'MB';
+                    color: #333333;;
+                    padding: 20px 0 30px 0;
+                }
+            }
+        }
+    }
+}
+.sgvBtn{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    &_d{
+        padding: 20px 40px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        background-color: #0099ff;
+        cursor: pointer;
+        &-text{
+            a{
+                text-decoration: none;
+            }
+            p{
+                color: #ffffff;
+                font-size: var(--font-size-p);
+                font-family: 'MB';
+                text-transform: uppercase;
+            }
+        }
+        &-icon{
+            img{
+                padding-left: 10px;
+                transition: all 0.6s;
+            }
+        }
+        &:hover{
+            img{
+                transform: translateX(10px);
+                transition: all 0.6s;
+            }
+        }
+    }
+}
+.wrapper-cars{
+    padding-bottom: 40px;
+}
+
+// mobile
+@media only screen and(max-width:767px) and (min-width:320px){
+    .wrapper-results{
+        justify-content: center;
+    }
+    .sgvBtn_d{
+        padding: 15px 30px;
+    }
+    .sgv_content-text .text #p2{
+        padding: 15px 0 20px 0;
+    }
+
+}
+// table
+@media only screen and (max-width:991px) and (min-width:500px){
+    .sgvBtn_d{
+        padding: 20px 35px;
+    }
+    .sgv_content-text .text #p2{
+        padding: 20px 0 25px 0;
+    }
+}
+//large
+@media screen and (max-width:1024px){
+    .sgv_content-text{
+        padding: 15px;
+    }
+}
+
+

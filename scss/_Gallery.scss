@@ -1,0 +1,130 @@
+.row-pg{
+    padding-top: 65px;
+}
+.row-pg-2{
+    padding-bottom: 25px;
+}
+.pg{
+    display: flex;
+    padding: 125px 0 80px 0;
+    align-items: center;
+    justify-content: space-around;
+    &_img{
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        max-height: 331.08px;
+        &-overlay{
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #999999;
+            transform: scale(0.8);
+            opacity: 0;
+            transition: all 0.5s;
+            &-icon{
+                position: absolute;
+                cursor: pointer;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        img{
+            width: 100%;
+            max-width: 100%;
+            cursor: pointer;
+            transition: all 1s;
+        }
+        &:hover{
+            img{
+                transform: scale(1.2);
+                transition: all 1s;
+            }
+            .pg_img-overlay{
+                opacity: 0.8;
+                transform: scale(1);
+                transition: all 0.5s;
+                &-icon{
+                    img{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    &_title{
+        text-align: center;
+        h3{
+            font-size: var(--font-size);
+            font-family: 'MB';
+            color: #333333;
+        }
+        p{
+            font-size: var(--font-size-p2);
+            padding-top: 25px;
+            font-family: 'OR';
+            color: #999999;
+        }
+    }
+}
+.tab_gallery{ 
+    color:#fff;
+    display: none;
+}
+
+.tab_navigation-1{
+    margin: 50px 0;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+            cursor: pointer;
+            list-style: none;
+            padding: 0 20px;
+        }
+    }
+    p{
+        font-size: 18px;
+        font-family: 'MB';
+        color: #666666;
+    }
+
+    .active{
+        p{
+            color: #0988ff;
+        }
+
+    }
+}
+
+// mobile
+@media only screen and(max-width:767px) and (min-width:320px){
+    .pg{
+        padding: 80px 0 40px 0;
+    }
+    .li-none{
+        display: none;
+    }
+    .tab_navigation-1{
+        margin: 0;
+        ul{
+            li{
+                padding: 0 7px;
+            }
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+// tablet
+@media only screen and (max-width:991px) and (min-width:500px){
+    .pg{
+        padding: 80px 0 40px 0;
+    }
+}

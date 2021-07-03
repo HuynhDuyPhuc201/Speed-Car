@@ -1,0 +1,158 @@
+
+
+.servicing{
+    &__title{
+        padding-top: 130px;
+        h3{
+            font-size: var(--font-size);
+            font-family: 'MB';
+            color: #232628;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: var(--font-size-p2);
+            font-family: 'OR';
+            color: #999999;
+            padding: 40px 0 80px 0;
+            line-height: 2rem;
+        }
+    }
+    &__form{
+        display: flex;
+        position: relative;
+        align-items: center;
+        border: 2px solid #ededed;
+        padding: 30px;
+        border-radius: 5px;
+        &-text{
+            display: flex;
+            align-items: center;
+            input{
+                outline: none;
+                border: none;
+            }
+            ::placeholder{
+                color: #232628;
+                opacity: 1; 
+                font-size: var(--font-size-p);
+                font-family: 'MB';
+            }
+            img{
+                position: absolute;
+                right: 25px;
+            }
+        }
+    }
+}
+.input-form{
+    padding: 15px 0;
+}
+//right
+
+.TimeOpenHouse{
+    padding: 30px;
+    border: 2px solid #ededed;
+    margin: 15px 0;
+    &__title{
+        h5{
+            font-size: 24px;
+            font-family: 'MB';
+            color: #232628;
+            position: relative;
+            &::after{
+                content: '';
+                width: 50px;
+                height: 3px;
+                position: absolute;
+                display: block;
+                background: #0988ff;
+                bottom: -20px;
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+        ul{
+            li{
+                padding: 12px 0;
+                list-style: none;
+                a{
+                    font-size: var(--font-size-p);
+                    font-family: 'MM';
+                    color: #232628;
+                    text-decoration: none;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}
+
+.servicingBtn{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    margin-left: 15px;
+    &_d{
+        padding: 20px 40px;
+        display: flex;
+        border-radius: 5px;
+        background-color: #0099ff;
+        cursor: pointer;
+        &-text{
+            p{
+                color: #ffffff;
+                font-size: var(--font-size-p);
+                text-transform: uppercase;
+                font-family: 'MB';
+            }
+        }
+        &-icon{
+            img{
+                padding-left: 10px;
+                transition: all 0.6s;
+            }
+        }
+        &:hover{
+            img{
+                transform: translateX(10px);
+                transition: all 0.6s;
+            }
+        }
+    }
+}
+@media only screen and (max-width:991px) and (min-width:500px){
+    .servicing{
+        &__form{
+            padding: 19px;
+            &-text{
+                ::placeholder{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .TimeOpenHouse__title {
+        h5{
+            font-size: 21px;
+        }
+    }
+    .servicingBtn_d{
+        padding: 15px 30px;
+    }
+}
+
+@media only screen and(max-width:767px) and (min-width:320px){
+    .servicing{
+        &__title{
+            padding-top: 100px;
+            p{
+                line-height: 1.5rem;
+                padding: 30px 0 50px 0;
+            }
+        }
+    }
+}

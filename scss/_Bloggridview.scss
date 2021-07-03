@@ -1,0 +1,40 @@
+
+.BlogGridView{
+    padding: 130px 0;
+}
+.wrapper-bgv{
+    margin-bottom: 220px;
+}
+.content-9{
+    top: 48%;
+}
+.bloggrid__text{
+    width: 283px;
+    height: 260px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    p{
+        font-size: 35px;
+        font-family: 'MB';
+        color: #ffffff;
+    }
+}
+
+
+// mobile
+@media only screen and (max-width:991px) and (min-width:500px){
+    .wrapper-bgv-1{
+        margin-bottom: 100px;
+    }
+}
+// tablet
+@media only screen and(max-width:767px) and (min-width:320px){
+    .BlogGridView {
+        padding: 30px 0; 
+    }
+    .wrapper-bgv {
+        margin-bottom: 180px;
+    }
+}
